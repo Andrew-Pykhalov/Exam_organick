@@ -120,7 +120,8 @@ ul {
 
 .promo__header_1,
 .proposal__header1,  
-.proposal__header3 {
+.proposal__header3, 
+.about__header1 {
     font-family: "Yellowtail", sans-serif;
     font-weight: normal;
     font-size: 36px;
@@ -214,4 +215,105 @@ ul {
 
 .proposal__header4 {
     color: #274C5B;
+}
+
+.about {
+    background-color: #F9F8F8;
+}
+
+.about__content {
+    padding: 145px 0;
+
+    display: flex;
+    gap: 30px;
+}
+
+.about__left, 
+.about__right {
+    width: 50%;
+}
+
+.about__left {
+    background-image: url("/images/about_main_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 55px;
+}
+
+.about__header2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 45px;
+    line-height: 60px;
+    color: #274C5B;
+}
+
+.about__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: #525C60;
+}
+
+.about__adv_types {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.about__adv {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about__adv_ico1, 
+.about__adv_ico2 {
+    display: inline-block;
+
+    width: 30%;
+    height: 100px;
+
+    background-color: #fff;
+
+    border-radius: 20px;
+}
+
+.about__adv_ico1 {
+    background-image: url("/images/about_bowl_ico.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.about__adv_ico2 {
+    background-image: url("/images/about_post_ico.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.about__adv_header {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 35px;
+    color: #274C5B;
+}
+
+.about__adv_desc {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.btn-about {
+    color: #fff;
+
+    background-color: #274C5B;
 }
