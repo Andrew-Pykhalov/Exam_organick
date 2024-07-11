@@ -1,0 +1,91 @@
+/* font-family: "Open Sans", sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: "Yellowtail", cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header__content {
+    padding: 60px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__list {
+    display: flex;
+    gap: 45px;
+}
+
+.header__list li:last-child {
+   margin-left: 15px;
+}
+
+.header__link {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #274C5B;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.header__link:hover {
+    color: #7EB693;
+}
+
+.header__cart {
+    padding: 10px 30px 10px 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid #D4D4D4;
+    border-radius: 45px;
+}
+
+.header__cart_ico {
+    display: inline-block;
+
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+
+    background-color: #274C5B;
+
+    background-image: url("/images/trolley_ico.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.header__cart_link, 
+.header__cart_counter {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #274C5B;
+    text-decoration: none;
+}
+
