@@ -118,10 +118,11 @@ ul {
     width: 40%;
 }
 
-.promo__header_1,
+.promo__header1,
 .proposal__header1,  
 .proposal__header3, 
-.about__header1 {
+.about__header1, 
+.products__header1 {
     font-family: "Yellowtail", sans-serif;
     font-weight: normal;
     font-size: 36px;
@@ -129,7 +130,7 @@ ul {
     color: #7EB693;
 }
 
-.promo__header_2 {
+.promo__header2 {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 70px;
@@ -247,7 +248,8 @@ ul {
     gap: 55px;
 }
 
-.about__header2 {
+.about__header2, 
+.products__header2 {
     font-family: "Roboto", sans-serif;
     font-size: 45px;
     line-height: 60px;
@@ -299,7 +301,8 @@ ul {
     background-position: center;
 }
 
-.about__adv_header {
+.about__adv_header, 
+.products__link {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     font-size: 25px;
@@ -307,13 +310,155 @@ ul {
     color: #274C5B;
 }
 
-.about__adv_desc {
-    /* display: flex;
-    flex-direction: column; */
-}
-
 .btn-about {
     color: #fff;
 
     background-color: #274C5B;
 }
+
+.products__content {
+    padding: 140px 0;
+}
+
+.products__header1, 
+.products__header2 {
+    width: 30%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.products__header2 {
+    margin-bottom: 45px;
+}
+
+.products__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.products__element {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 30px;
+
+    min-height: 590px;
+    width: calc(33% - 10px);
+
+    background-color: #F9F8F8;
+
+    background-image: url("/images/products_broccoli.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top 30%;
+
+    border-radius: 30px;
+}
+
+.products__element_corn {
+    background-image: url("/images/products_corn.png");
+}
+
+.products__element_pistachio {
+    background-image: url("/images/products_pistachio.png");
+}
+
+.products__element_tomato {
+    background-image: url("/images/products_tomato.png");
+}
+
+.products__element_almond {
+    background-image: url("/images/products_almonds.png");
+}
+
+.products__element_nut {
+    background-image: url("/images/products_hazelnut.png");
+}
+
+.products__type {
+    padding: 5px 20px;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 27px;
+    color: #fff;
+
+    background-color: #274C5B;
+
+    border-radius: 8px;
+}
+
+.products__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+}
+
+.products__value {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.products__name {
+    padding-bottom: 20px;
+
+   border-bottom: 1px solid #D4D4D4;
+}
+
+.products__link {
+    text-decoration: none;
+}
+
+.products__price {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    line-height: 32px;
+    color: #B8B8B8;
+
+    text-decoration: line-through;
+}
+
+.products__discount {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #274C5B;
+}
+
+.products__list {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.products__list_item {
+    display: inline-block;
+
+    width: 13px;
+    height: 14px;
+
+    background-image: url("/images/products_star_ico.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.products__list_item_gray {
+    background-image: url("/images/products_star_gray_ico.png");
+}
+
