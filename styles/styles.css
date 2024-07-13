@@ -123,7 +123,8 @@ ul {
 .proposal__header3, 
 .about__header1, 
 .products__header1, 
-.feedback__header1 {
+.feedback__header1, 
+.offer__header1 {
     font-family: "Yellowtail", sans-serif;
     font-weight: normal;
     font-size: 36px;
@@ -251,7 +252,8 @@ ul {
 
 .about__header2, 
 .products__header2, 
-.feedback__header2 {
+.feedback__header2, 
+.offer__header2 {
     font-family: "Roboto", sans-serif;
     font-size: 45px;
     line-height: 60px;
@@ -304,7 +306,8 @@ ul {
 }
 
 .about__adv_header, 
-.products__link {
+.products__link, 
+.offer__link {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     font-size: 25px;
@@ -345,7 +348,8 @@ ul {
     flex-wrap: wrap;
 }
 
-.products__element {
+.products__element, 
+.offer__element {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -366,7 +370,8 @@ ul {
     border-radius: 30px;
 }
 
-.products__element_corn {
+.products__element_corn, 
+.offer__element_corn {
     background-image: url("/images/products_corn.png");
 }
 
@@ -374,11 +379,13 @@ ul {
     background-image: url("/images/products_pistachio.png");
 }
 
-.products__element_tomato {
+.products__element_tomato, 
+.offer__element_tomato {
     background-image: url("/images/products_tomato.png");
 }
 
-.products__element_almond {
+.products__element_almond, 
+.offer__element_almond {
     background-image: url("/images/products_almonds.png");
 }
 
@@ -386,7 +393,8 @@ ul {
     background-image: url("/images/products_hazelnut.png");
 }
 
-.products__type {
+.products__type, 
+.offer__type {
     padding: 5px 20px;
 
     font-family: "Open Sans", sans-serif;
@@ -400,7 +408,8 @@ ul {
     border-radius: 8px;
 }
 
-.products__desc {
+.products__desc, 
+.offer__desc {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -408,23 +417,27 @@ ul {
     width: 100%;
 }
 
-.products__value {
+.products__value,
+.offer__value {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.products__name {
+.products__name, 
+.offer__name {
     padding-bottom: 20px;
 
    border-bottom: 1px solid #D4D4D4;
 }
 
-.products__link {
+.products__link, 
+.offer__link {
     text-decoration: none;
 }
 
-.products__price {
+.products__price, 
+.offer__price {
     font-family: "Open Sans", sans-serif;
     font-size: 17px;
     line-height: 32px;
@@ -433,7 +446,8 @@ ul {
     text-decoration: line-through;
 }
 
-.products__discount {
+.products__discount, 
+.offer__discount {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -441,7 +455,8 @@ ul {
     color: #274C5B;
 }
 
-.products__list {
+.products__list, 
+.offer__list {
     margin-left: auto;
 
     display: flex;
@@ -451,7 +466,8 @@ ul {
 }
 
 .products__list_item, 
-.feedback__list_item {
+.feedback__list_item, 
+.offer__list_item {
     display: inline-block;
 
     width: 13px;
@@ -607,4 +623,35 @@ ul {
     font-size: 18px;
     line-height: 32px;
     color: #274C5B;
+}
+
+.offer {
+    background-color: #274C5B;
+}
+
+.offer__content {
+    padding: 150px 0;
+}
+
+.offer__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 60px;
+}
+
+.offer__products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.offer__header2 {
+    color: #fff;
+}
+
+.btn_offer {
+    margin-right: 10px;
 }
