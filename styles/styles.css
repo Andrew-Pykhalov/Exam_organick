@@ -755,3 +755,56 @@ ul {
 
     border-radius: 20px;
 }
+
+.sub {
+    padding: 30px;
+}
+
+.sub__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 100px 70px;
+
+    background-image: url("/images/sub_main_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 30px;
+}
+
+.sub__header {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #fff;
+}
+
+.sub__form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sub__form_input {
+    padding: 25px;
+
+    min-width: 350px;
+
+    border: none;
+    border-radius: 16px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #525C60;
+}
+
+.btn_sub {
+    background-color: #274C5B;
+
+    color: #fff;
+}
