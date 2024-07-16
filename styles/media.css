@@ -1,0 +1,234 @@
+@media(max-width: 1281px) {
+    .promo__header2 {
+        font-size: 50px;
+        line-height: 64px;
+    }
+
+    .about__header2, 
+    .products__header2, 
+    .feedback__header2, 
+    .offer__header2, 
+    .annotation__header2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .about__adv_header, 
+    .products__link, 
+    .offer__link {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .feedback__text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .annotation__header3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .about__text, 
+    .annotation__text, 
+    .footer__left_header, 
+    .footer__left_text, 
+    .footer__center_text, 
+    .footer__right_link {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+}
+
+@media(max-width: 1153px) {
+    .header__content {
+        padding: 40px 0;
+    }
+
+    .header__cart_ico {
+        width: 40px;
+        height: 40px;
+    }
+
+    .proposal__content {
+        padding: 80px 0;
+
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .about__adv_ico1, 
+    .about__adv_ico2 {
+        width: 40%;
+    }
+
+    .btn {
+        padding: 20px 70px 20px 25px;
+
+        font-size: 16px;
+    }
+
+    .products__items {
+        justify-content: center;
+
+    }
+
+    .products__element, 
+    .offer__element {
+        width: calc(40% - 10px);
+
+
+    }
+
+    .feedback__advantages_item {
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .offer__products {
+        flex-direction: column;
+    }
+
+    .categories__link {
+        padding: 25px 65px;
+
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .sub__header {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .sub__form_input {
+        padding: 20px;
+
+        min-width: 300px;
+
+        font-size: 16px;
+    }
+
+    .footer__content {
+        padding: 60px 0;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+
+        position: relative;
+    }
+
+    .footer__content::after, 
+    .footer__content::before {
+        display: none;
+    }
+
+    .footer__left, 
+    .footer__right, 
+    .footer__right_list {
+        align-items: center;
+
+        padding: 0;
+    }
+
+    .footer__center{
+        gap: 30px;
+    }
+
+    .footer__left {
+        gap: 30px;
+    }
+
+    .footer__left_header {
+        text-align: center;
+    }
+}
+
+@media(max-width: 1025px) {
+    .header__content {
+        justify-content: flex-end;
+        gap: 40px;
+    }
+    
+    .header__toogle {
+        display: block;
+
+        /* background-image: url("/images/x_mark_ico.png"); */
+    }
+
+    #header__toogle:checked ~ .header__nav {
+        display: block;
+    }
+
+    #header__toogle:checked ~ .header__toogle {
+        background-image: url("/images/x-mark_ico2.png");
+
+        /* background-color: #fff; */
+        
+        /* border-radius: 6px; */
+
+        position: fixed;
+        top: 5%;
+        left: 25%;
+
+        z-index: 3;
+    }
+
+    .header__nav {
+        display: none;
+
+        padding: 40px;
+
+        height: 100%;
+        width: 30%;
+
+        background-color: #7eb6938c;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        z-index: 2;
+    }
+
+    .header__list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+    }
+
+    .header__list li:last-child {
+        margin-left: 0;
+    }
+
+    .header__link {
+        color: #fff;
+    }
+}
+
+@media(max-width: 800px) {
+
+}
+
+@media(max-width: 768px) {
+
+}
+
+@media(max-width: 640px) {
+
+}
+
+@media(max-width: 425px) {
+
+}
+
+@media(max-width: 375px) {
+
+}
+
+@media(max-width: 320px) {
+
+}
