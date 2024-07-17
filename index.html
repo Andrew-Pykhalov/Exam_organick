@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/media.css">
+    <link rel="stylesheet" href="/styles/animation.css">
     <title>Document</title>
 
     <script src="/script.js"></script>
@@ -18,14 +19,15 @@
             <div class="container">
 
                 <div class="header__content">
-                    <input type="checkbox" id="header__toogle">
                     <button class="header__toogle"><label for="header__toogle">.</label></button>
+                    <input type="checkbox" id="header__toogle">
 
                     <div class="header__logo">
-                        <a href="#"><img src="/images/logo.png" alt="Logo"></a>
+                        <a href="#"><img class="header__logo_img" src="/images/logo.png" alt="Logo"></a>
                     </div>
 
                     <nav class="header__nav">
+                        <button class="header__toogle_x"><label for="header__toogle">.</label></button>
                         <ul class="header__list">
                             <li class="header__item"><a class="header__link" href="">Home</a></li>
                             <li class="header__item"><a class="header__link" href="">About Us</a></li>
@@ -83,7 +85,7 @@
                         <div class="about__desc">
                             <h3 class="about__header1">About Us</h3>
                             <h2 class="about__header2">We Believe in Organic </br> Foods For Strong Health</h2>
-                            <p class="about__text">Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have grown on the principles of health, and care. We aim to give our customers a healthy chemical-free meal for perfect nutrition.</p>
+                            <p class="about__text about__text_center">Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have grown on the principles of health, and care. We aim to give our customers a healthy chemical-free meal for perfect nutrition.</p>
                         </div>
                         <div class="about__adv_types">
                             <div class="about__adv">
@@ -232,7 +234,7 @@
                         <h3 class="feedback__header1">Testimonial</h3>
                         <h2 class="feedback__header2">What Our Customer Saying?</h2>
                         <div class="feedback__user_data">
-                            <img src="/images/feedback_user_ico.png" alt="User">
+                            <img class="feedback__user_img" src="/images/feedback_user_ico.png" alt="User">
                             <ul class="feedback__list">
                                 <li class="feedback__list_item"></li>
                                 <li class="feedback__list_item"></li>
@@ -374,7 +376,7 @@
             <div class="container">
 
                 <div class="sub__content">
-                    <h2 class="sub__header">Subscribe our </br> Newsletter</h2>
+                    <h2 class="sub__header">Subscribe our Newsletter</h2>
                     <form class="sub__form">
                         <input class="sub__form_input" type="email" name="email" placeholder="Enter your email address">
                         <button class="btn btn_sub">Subscribe</button>
@@ -404,7 +406,7 @@
                         </span>
                     </div>
                     <div class="footer__center">
-                        <a href="#"><img src="/images/logo.png" alt="Logo"></a>
+                        <a href="#"><img class="header__logo_img" src="/images/logo.png" alt="Logo"></a>
                         <p class="footer__center_text">We are a popular and farming company aspiring to be a leader in the Organic food industry.</p>
                         <ul class="footer__center_list">
                             <li class="footer__center_item"><a class="footer__center_link footer__center_link_fb" href="#"></a></li>

@@ -1,3 +1,9 @@
+@media(max-width: 1441px) {
+    .sub__header {
+        width: 40%;
+    }
+}
+
 @media(max-width: 1281px) {
     .promo__header2 {
         font-size: 50px;
@@ -59,9 +65,9 @@
         gap: 50px;
     }
 
-    .about__adv_ico1, 
-    .about__adv_ico2 {
-        width: 40%;
+    .proposal__left, 
+    .proposal__right {
+        width: 80%;
     }
 
     .btn {
@@ -77,7 +83,7 @@
 
     .products__element, 
     .offer__element {
-        width: calc(40% - 10px);
+        width: 40%;
 
 
     }
@@ -155,49 +161,41 @@
     
     .header__toogle {
         display: block;
-
-        /* background-image: url("/images/x_mark_ico.png"); */
     }
 
     #header__toogle:checked ~ .header__nav {
         display: block;
     }
 
-    #header__toogle:checked ~ .header__toogle {
-        background-image: url("/images/x-mark_ico2.png");
-
-        /* background-color: #fff; */
-        
-        /* border-radius: 6px; */
-
-        position: fixed;
-        top: 5%;
-        left: 25%;
-
-        z-index: 3;
-    }
-
     .header__nav {
-        display: none;
+        display: block;
 
         padding: 40px;
 
         height: 100%;
         width: 30%;
 
-        background-color: #7eb6938c;
-
         position: fixed;
         top: 0;
         left: 0;
 
         z-index: 2;
+
+        transform: translateX(0%);
+        animation: backSlide 0.5s linear 1 forwards;
+    }
+
+    #header__toogle:checked ~ .header__nav {
+        transform: translateX(-100%);
+        animation: Slide 0.5s linear 1 forwards;
     }
 
     .header__list {
         flex-direction: column;
         align-items: flex-start;
         gap: 35px;
+
+        margin-top: 20px;
     }
 
     .header__list li:last-child {
@@ -207,28 +205,647 @@
     .header__link {
         color: #fff;
     }
+
+    .about__content {
+        padding: 60px 0;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__left {
+        min-height: 500px;
+        width: 70%;
+    }
+
+    .about__right {
+        align-items: center;
+
+        width: 70%;
+    }
+
+    .about__header1, 
+    .about__header2, 
+    .about__text_center {
+        text-align: center;
+    }
+
+    .about__adv_desc {
+        width: 70%;
+    }
+
+    .products__content, 
+    .feedback__content {
+        padding: 70px 0;
+    }
+
+    .products__value, 
+    .offer__value {
+        flex-direction: column;
+    }
+
+    .products__list, 
+    .offer__list {
+        margin-left: 0;
+    }
+
+    .feedback__content {
+        gap: 50px;
+    }
+
+    .feedback__user_img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .feedback__advantages_item {
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+    .feedback__advantages_num {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .feedback__advantages_text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .annotation__content {
+        width: 60%;
+    }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 801px) {
+    .btn {
+        padding: 15px 70px 15px 25px;
+        font-size: 14px;
+    }
+    
+    .header__content {
+        padding: 30px 0;
+    }
 
+    .header__toogle, 
+    .header__toogle_x {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .header__logo_img {
+        width: 150px;
+        height: auto;
+    }
+
+    .header__cart_link, 
+    .header__cart_counter {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .header__cart_ico {
+        width: 30px;
+        height: 30px;
+
+        background-size: 20px 20px;
+    }
+
+    .promo__header2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .proposal__header2, 
+    .proposal__header4 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .about__text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .about__left {
+        min-height: 500px;
+    }
+
+    .products__element, 
+    .offer__element {
+        width: 50%;
+    }
+
+    .products__price, 
+    .offer__price {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .products__discount, 
+    .offer__discount {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .feedback__list_item {
+        background-size: cover;
+
+        width: 15px;
+        height: 15px;
+    }
+
+    .offer__content {
+        padding: 75px 0;
+    }
+
+    .annotation {
+        background-size: cover;
+    }
+
+    .annotation__content {
+        padding: 40px;
+    }
+
+    .annotation__header2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .annotation__header3 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .annotation__text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .categories__content {
+        padding: 70px 0;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .categories__1, 
+    .categories__2, 
+    .categories__3 {
+        width: 60%;
+    }
+
+    .sub__content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sub__header {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .sub__form_input {
+        padding: 15px;
+        min-width: 250px;
+        font-size: 14px;
+    }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 769px) {
+    .about__adv_ico1, 
+    .about__adv_ico2 {
+        width: 90px; 
+        height: 90px;
+    }
 
+    .sub__form {
+        flex-direction: column;
+    }
 }
 
-@media(max-width: 640px) {
+@media(max-width: 641px) {
+    .header__cart_link, 
+    .header__cart_counter {
+        font-size: 14px;
+        line-height: 24px;
+    }
 
+    .promo {
+        min-height: 800px;
+    }
+
+    .promo__header1, 
+    .proposal__header1, 
+    .proposal__header3, 
+    .about__header1, 
+    .products__header1, 
+    .feedback__header1, 
+    .offer__header1, 
+    .annotation__header1 {
+        font-size: 26px;
+        line-height: 55px;
+    }
+
+    .promo__header2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .proposal__left, 
+    .proposal__right {
+        min-height: 250px;
+    }
+
+    .proposal__header2, 
+    .proposal__header4, 
+    .about__header2, 
+    .products__header2, 
+    .feedback__header2, 
+    .offer__header2, 
+    .annotation__header2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .about__text {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .about__left {
+        min-height: 400px;
+    }
+
+    .about__adv_ico1, 
+    .about__adv_ico2 {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .products__element, 
+    .offer__element {
+        width: 65%;
+    }
+
+    .products__content, 
+    .feedback__content {
+        padding: 40px 0;
+    }
+
+    .feedback__text {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .feedback__user_name {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .feedback__advantages {
+        flex-wrap: wrap;
+    }
+
+    .products__element, 
+    .offer__element {
+        background-size: 65%;
+
+        min-height: 390px;
+        width: 50%;
+    }
+
+    .products__type, 
+    .offer__type {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .products__price, 
+    .offer__price {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .products__discount, 
+    .offer__discount {
+        font-size: 11px;
+        line-height: 21px;
+    }
+
+    .products__list_item, 
+    .feedback__list_item, 
+    .offer__list_item {
+        width: 9px;
+        height: 10px;
+        background-size: cover;
+    }
+
+    .about__adv_header, 
+    .products__link, 
+    .offer__link {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .annotation__content {
+        width: 70%;
+        padding: 30px;
+    }
+
+    .categories__1, 
+    .categories__2, 
+    .categories__3 {
+        min-height: 400px;
+    }
+
+    .categories__link {
+        padding: 15px 55px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .sub__header {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .footer__header {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .about__text, 
+    .annotation__text, 
+    .footer__left_header, 
+    .footer__left_text, 
+    .footer__center_text, 
+    .footer__right_link {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
 
-@media(max-width: 425px) {
 
+@media(max-width: 426px) {
+    .header__content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header__link {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .header__nav {
+        width: 40%;
+        padding: 20px;
+    }
+
+    .promo {
+        min-height: 700px;
+    }
+
+    .promo__content {
+        width: 60%;
+    }
+
+    .btn {
+        padding: 10px 60px 10px 15px;
+        font-size: 12px;
+
+        background-size: 25%;
+    }
+
+    .about__adv {
+        flex-direction: column;
+    }
+
+    .about__adv_desc {
+        width: 90%;
+
+        text-align: center;
+    }
+
+    .about__left {
+        width: 100%;
+    }
+
+    .about__right {
+        width: 80%;
+    }
+
+    .proposal__left, 
+    .proposal__right {
+        min-height: 200px;
+    }
+
+    .proposal__header1, 
+    .proposal__header3,
+    .proposal__header2, 
+    .proposal__header4 {
+        margin-left: 20px;
+    }
+
+    .proposal__header2, 
+    .proposal__header4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .products__element, 
+    .offer__element {
+        width: 70%;
+
+        background-size: 60%;
+        background-position: center top 23%;
+    }
+
+    .feedback__user_img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .feedback {
+        background-position: center top 35%;
+    }
+
+    .feedback__header2 {
+        width: 70%;
+    }
+
+    .feedback__advantages_item {
+        min-width: 120px;
+        min-height: 120px;
+    }
+
+    .feedback__advantages_num {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .feedback__advantages_text {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .feedback__user_name {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .feedback__user_type {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .feedback__text {
+        margin: 0;
+    }
+
+    .offer__head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .annotation__content {
+        gap: 30px;
+    }
+
+    .map__container {
+        min-height: 360px;
+    }
+
+} 
+
+@media(max-width: 376px) {
+    .promo {
+        min-height: 600px;
+        background-position: center left 32%;
+    }
+
+    .about__text, 
+    .annotation__text, 
+    .footer__left_header, 
+    .footer__left_text, 
+    .footer__center_text, 
+    .footer__right_link {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .about__right {
+        width: 85%;
+    }
+
+    .about__adv_ico1, 
+    .about__adv_ico2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .promo__header1, 
+    .proposal__header1, 
+    .proposal__header3, 
+    .about__header1, 
+    .products__header1, 
+    .feedback__header1, 
+    .offer__header1, 
+    .annotation__header1 {
+        font-size: 21px;
+        line-height: 49px;
+    }
+
+    .proposal__header2, 
+    .proposal__header4, 
+    .about__header2, 
+    .products__header2, 
+    .feedback__header2, 
+    .offer__header2, 
+    .annotation__header2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .feedback__user_img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .categories__1, 
+    .categories__2, 
+    .categories__3 {
+        min-height: 350px;
+    }
+
+    .sub__form_input {
+        min-width: 200px;
+    }
+
+    .footer__center_link {
+        width: 45px;
+        height: 45px;
+    }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 321px) {
+    .promo__content {
+        width: 70%;
+    }
 
-}
+    .promo {
+        background-position: center left 30%;
+    }
 
-@media(max-width: 320px) {
+    .proposal__left, 
+    .proposal__right {
+        min-height: 180px;
 
+        background-position: center left 20%;
+    }
+
+    .feedback__user_data {
+        gap: 15px;
+    }
+
+    .products__element, 
+    .offer__element {
+        width: 80%;
+    }
+
+    .annotation__content {
+        width: 80%;
+        padding: 25px;
+    }
+
+    .categories__1, 
+    .categories__2, 
+    .categories__3 {
+        min-height: 300px;
+        width: 70%;
+    }
+
+    .categories__link {
+        padding: 10px 35px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .sub__content {
+        padding: 80px 50px;
+    }
+
+    .sub__header {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .sub__form_input {
+        font-size: 12px;
+    }
 }

@@ -30,7 +30,8 @@ ul {
     display: none;
 }
 
-.header__toogle {
+.header__toogle, 
+.header__toogle_x {
     display: none;
     
     width: 35px;
@@ -47,9 +48,13 @@ ul {
     background-position: center;
 }
 
-/* .header__toogle_x {
-    background-image: url("/images/x_mark_ico.png");
-} */
+.header__toogle_x {
+    display: block;
+    
+    background-image: url("/images/x-mark_ico2.png");
+
+    position: static;
+}
 
 .header__list {
     display: flex;
@@ -253,7 +258,7 @@ ul {
 
 .about__left {
     background-image: url("/images/about_main_img.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -300,7 +305,7 @@ ul {
 .about__adv_ico2 {
     display: inline-block;
 
-    width: 30%;
+    width: 100px;
     height: 100px;
 
     background-color: #fff;
@@ -381,7 +386,7 @@ ul {
 
     background-image: url("/images/products_broccoli.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     background-position: center top 30%;
 
     border-radius: 30px;
@@ -503,7 +508,7 @@ ul {
 .feedback {
     background-image: url("/images/feedback_main_bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
@@ -919,7 +924,7 @@ ul {
 
     background-image: url("/images/ico_fb.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
 }
 
