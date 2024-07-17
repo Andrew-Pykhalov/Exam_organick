@@ -327,6 +327,10 @@ ul {
     background-position: center;
 }
 
+.about__adv_desc {
+    width: 70%;
+}
+
 .about__adv_header, 
 .products__link, 
 .offer__link {

@@ -1,0 +1,21 @@
+@keyframes Slide {
+    form {
+        transform: translateX(-100%);
+        background-color: #7EB693;
+    }
+    to {
+        transform: translateX(0%);
+        background-color: #7eb6938c;
+    }
+}
+
+@keyframes backSlide {
+    form {
+        transform: translateX(0%);
+        background-color: #7eb6938c;
+    }
+    to {
+        transform: translateX(-100%);
+        background-color: #7EB693;
+    }
+}

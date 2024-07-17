@@ -4,6 +4,21 @@
     }
 }
 
+@media(max-width: 1300px) {
+    .footer__header {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .footer__left_header, 
+    .footer__left_text, 
+    .footer__center_text, 
+    .footer__right_link {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
 @media(max-width: 1281px) {
     .promo__header2 {
         font-size: 50px;
@@ -23,6 +38,18 @@
     .products__link, 
     .offer__link {
         font-size: 20px;
+        line-height: 30px;
+    }
+
+    .products__price, 
+    .offer__price {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .products__discount, 
+    .offer__discount {
+        font-size: 16px;
         line-height: 30px;
     }
 
@@ -78,14 +105,11 @@
 
     .products__items {
         justify-content: center;
-
     }
 
     .products__element, 
     .offer__element {
         width: 40%;
-
-
     }
 
     .feedback__advantages_item {
@@ -249,6 +273,14 @@
         margin-left: 0;
     }
 
+    .products__element, 
+    .offer__element {
+        width: 45%;
+
+        background-size: 80%;
+        background-position: center top 20%;
+    }
+
     .feedback__content {
         gap: 50px;
     }
@@ -275,6 +307,11 @@
 
     .annotation__content {
         width: 60%;
+    }
+
+    .sub__content {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
@@ -337,6 +374,11 @@
         width: 50%;
     }
 
+    .products__items {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .products__price, 
     .offer__price {
         font-size: 14px;
@@ -397,11 +439,6 @@
         width: 60%;
     }
 
-    .sub__content {
-        flex-direction: column;
-        gap: 20px;
-    }
-
     .sub__header {
         width: 100%;
 
@@ -420,6 +457,12 @@
     .about__adv_ico2 {
         width: 90px; 
         height: 90px;
+    }
+
+    .offer__head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
     }
 
     .sub__form {
@@ -707,12 +750,6 @@
         margin: 0;
     }
 
-    .offer__head {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
     .annotation__content {
         gap: 30px;
     }
@@ -783,6 +820,12 @@
         min-height: 350px;
     }
 
+    .categories__link {
+        padding: 10px 35px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
     .sub__form_input {
         min-width: 200px;
     }
@@ -828,12 +871,6 @@
     .categories__3 {
         min-height: 300px;
         width: 70%;
-    }
-
-    .categories__link {
-        padding: 10px 35px;
-        font-size: 14px;
-        line-height: 24px;
     }
 
     .sub__content {
