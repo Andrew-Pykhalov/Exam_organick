@@ -388,35 +388,11 @@ ul {
 
     background-color: #F9F8F8;
 
-    background-image: url("/images/products_broccoli.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center top 30%;
-
     border-radius: 30px;
 }
 
-.products__element_corn, 
-.offer__element_corn {
-    background-image: url("/images/products_corn.png");
-}
-
-.products__element_pistachio {
-    background-image: url("/images/products_pistachio.png");
-}
-
-.products__element_tomato, 
-.offer__element_tomato {
-    background-image: url("/images/products_tomato.png");
-}
-
-.products__element_almond, 
-.offer__element_almond {
-    background-image: url("/images/products_almonds.png");
-}
-
-.products__element_nut {
-    background-image: url("/images/products_hazelnut.png");
+.products__img {
+    width: 100%;
 }
 
 .products__type, 
@@ -512,7 +488,7 @@ ul {
 .feedback {
     background-image: url("/images/feedback_main_bg.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
